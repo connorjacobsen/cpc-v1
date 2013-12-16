@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block active_ftp %}class="active"{% endblock %}
+
+{% block body %}
+	<h1 class="text-center">FTP Instructions</h1>
+	<hr class="hr-line" />
+	<p>Below are three ways to access the FTP server that has been created for our customers so that they can upload large files. This FTP server allows us to receive your files that are too large to be sent via email and that would otherwise have to be hand delivered on a USB drive, CD, or other media. Please view the methods below and choose the one that best fits your needs.</p>
+	<div class="well alert-danger">To obtain the username and password information, please contact us at (850) 893-4799 or via email at</pre> <a href="mailto:sales@cpccpc.com">sales@cpccpc.com</a></div> <!-- /well -->
+	<ol>
+		<li><strong>You can connect to the FTP server using any standard FTP client such as FileZilla, FTPVoyager, CoreFTP, or CuteFTP. To connect using an FTP client, you will need the following information:</strong></li><br>
+		<ul class="list-unstyled">
+			<li><strong>Host/Server</strong>: files164.cyberlynk.net </li>
+			<li><strong>Username</strong>: Please contact us for the username</li>
+			<li><strong>Password</strong>: Please contact us for the password </li>
+			<li><strong>Connection Type</strong>: FTP</li>
+			<li><strong>Port Number</strong>: 21</li>
+		</ul><br>
+		<p>Once you have connected, you can upload files in a variety of ways, depending on the FTP client used. You can drag/drop, double click, or use the FTP client's built in icons or other methods to transfer over your file.</p>
+		<p>If you do not have an FTP client installed, you can obtain the free, open-source FileZilla FTP Client by going to <a href="http://filezilla-project.org/">http://filezilla-project.org/</a>.</p>
+		<br>
+		<li><strong>You can connect using Internet Explorer, or any other Web Browser by using the information below:</strong></li>
+		<ol class="ftp-nested">
+			<li>First contact us to obtain the username and password information needed to connect.</li>
+			<li>Then open your web browser, and in the URL box, enter in the following information:</li>
+			<p><strong>ftp://username:password@files164.cyberlynk.net</strong></p>
+			<p>Note that the words username and password in that link above will need to be replaced with the <code>username</code> and <code>password</code> you obtain from us.</p>
+			<li>Once you have successfully connected, you should see a list of files. This should allow for dragging/dropping capabilities on any Windows machine.</li>
+		</ol>
+		<br>
+		<li>You can also use the Web Based JAVA FTP client on any Windows computer:</li>
+		<p><a href="http://files164.cyberlynk.net/client">http://files164.cyberlynk.net/client</a></p>
+		<div class="well alert-danger">Again, please contact us to obtain the username and password information.</div> <!-- /well -->
+	</ol>
+	<br>
+	<p>If you have any questions or problems, please feel free to contact us at (850) 893-4799 or via email at <a href="mailto:sales@cpccpc.com">sales@cpccpc.com</a>.</p>
+{% endblock %}

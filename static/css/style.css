@@ -1,0 +1,150 @@
+/************************************************
+
+	Custom CSS for Commercial Print & Copy
+
+************************************************/
+
+/************************************************
+					Navigation
+************************************************/
+
+/* Custom page header */
+.header {
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+.container-narrow > hr {
+	margin: 30px 0;
+}
+
+nav.navbar.navbar-default {
+	min-height: 100px;
+}
+
+div.navbar-header {
+	padding-top: 25px;
+}
+
+a.navbar-brand {
+	font-size: 32px;
+}
+
+
+/************************************************
+					Side Nav
+************************************************/
+
+.panel-default > .panel-heading {
+	background-color: #EEE;
+}
+
+.products-title {
+	font-size: 18px;
+}
+
+/************************************************
+					Footer
+************************************************/
+
+footer {
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+.footer {
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-image: url('../img/type.png');
+	min-height: 400px;
+	color: #fff;
+}
+
+p.footer-title {
+	color: #999;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: -10px;
+	margin-bottom: 0px;
+}
+
+ul.product-list {
+	text-decoration: none;
+}
+
+p.copyright {
+	color: #999;
+}
+
+.contact-list > li > strong {
+	color: #999;
+}
+
+.contact-list > li {
+	color: #CCC;
+}
+
+/************************************************
+					Body
+************************************************/
+
+body {
+	background-image: url('../img/whitediamond.png');
+	padding-top: 40px;
+}
+
+.body-content {
+	padding-left: 40px;
+}
+
+.navbar-brand, h1 {
+    font-family: 'Lustria', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    }
+h2, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    }
+p, a, li, div {
+    font-family: 'Lato', sans-serif;
+    }
+strong {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    }
+
+/************************************************
+					FTP
+************************************************/
+
+.ftp-nested {
+	list-style-type: lower-alpha;
+}
+
+
+/************************************************
+					Brand
+************************************************/
+
+.cpc-brand > a {
+	text-decoration: none;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tags -->
+		<meta name="description" content="Commercial Print & Copy" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- end meta -->
+
+		<title>Commercial Print & Copy</title>
+
+		<!-- icon -->
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.gif') }}" />
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootflat.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootflat-square.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootflat-extensions.css') }}" />
+		<link href='http://fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+		{% block stylesheets %}{% endblock %}
+		<!-- end stylesheets -->
+	</head>
+	<body>
+		<!-- navbar and header -->
+		<!-- TODO:
+			- Fix Brand text overlap on mobile display
+		-->
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills nav-pills-square pull-right">
+					<li {% block active_home %}{% endblock %}><a href="/">Home</a></li>
+					<li {% block active_products %}{% endblock %}><a href="/products">Products</a></li>
+					<li {% block active_contact %}{% endblock %}><a href="/contact">Contact</a></li>
+					<li {% block active_map %}{% endblock %}><a href="/map">Map</a></li>
+					<li {% block active_ftp %}{% endblock %}><a href="/ftp">FTP</a></li>
+				</ul>
+				<h3 class="text-muted cpc-brand"><a href="/">Commercial Print & Copy</a></h3>
+			</div> <!-- /header -->
+		</div> <!-- /container -->
+		<!-- end navbar and header --> 
+		<br>
+		<br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 side-nav">
+					<div class="list-group">
+						<div class="panel panel-default">
+							<div class="panel-heading products-title">Products</div>
+							<a href="/brochures" class="list-group-item {% block active_brochures %}{% endblock %}">Brochures</a>
+							<a href="/cards" class="list-group-item {% block active_cards %}{% endblock %}">Cards</a>
+							<a href="/newsletters" class="list-group-item {% block active_newsletters %}{% endblock %}">Newsletters</a>
+							<a href="/stationery" class="list-group-item {% block active_stationery %}{% endblock %}">Stationery</a>
+							<a href="/catalogs" class="list-group-item {% block active_catalogs %}{% endblock %}">Catalogs/Booklets</a>
+							<a href="/folders" class="list-group-item {% block active_folders %}{% endblock %}">Folders</a>
+							<a href="/custom" class="list-group-item {% block active_custom %}{% endblock %}">Custom & Misc.</a>
+						</div> <!-- /panel -->
+					</div> <!-- /list-group -->
+				</div> <!-- /col-md-3 -->
+				<div class="col-md-8 body-content">
+					{% block body %}
+					{% endblock %}
+				</div> <!-- /col-md-8 -->
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+
+		<!-- footer -->
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<p class="text-center copyright">Copyright &copy; {{year}} Commercial Print & Copy, All rights reserved.</p>
+				</div> <!-- /row -->
+				<div class="row">
+					<div class="container">
+						<div class="col-md-3 footer-products">
+							<p class="footer-title">Products</p>
+							<ul class="list-unstyled">
+								<li><a href="/brochures">Brochures</a></li>
+								<li><a href="/cards">Cards</a></li>
+								<li><a href="/newsletters">Newsletters</a></li>
+								<li><a href="/stationery">Stationery</a></li>
+								<li><a href="/catalogs">Catalogs/Booklets</a></li>
+								<li><a href="/folders">Folders</a></li>
+								<li><a href="/custom">Custom & Misc.</a></li>
+							</ul>
+						</div> <!-- /footer-products -->
+						<div class="col-md-3 site-map">
+							<p class="footer-title">Site Links</p>
+							<ul class="list-unstyled">
+								<li><a href="/">Home</a></li>
+								<li><a href="/contact">Contact Us</a></li>
+								<li><a href="/map">Map & Directions</a></li>
+								<li><a href="/ftp">FTP Instructions</a></li>
+							</ul>
+						</div> <!-- /site-map -->
+						<div class="col-md-6 contact-area">
+							<p class="footer-title">Contact Info</p>
+							<ul class="list-unstyled contact-list">
+								<li><strong>Address</strong>: 1403 Maclay Commerce Dr</li>
+								<li>Tallahassee, FL 32312-1792</li>
+								<li><strong>Phone</strong>: (850) 893-4799</li>
+								<li><strong>Fax</strong>: (850) 893-7739</li>
+								<li><strong>Email</strong>: <a href="mailto:sales@cpccpc.com">sales@cpccpc.com</a></li>
+							</ul>
+						</div> <!-- /contact-area -->
+					</div> <!-- /container -->
+				</div>
+			</div> <!-- /footer -->
+		</footer>
+		<!-- end footer -->
+
+		<!-- javascript -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.10.1.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/respond.min.js') }}"></script>
+		{% block javascript %}{% endblock %}
+		<!-- end javascript -->
+	</body>
+</html>
